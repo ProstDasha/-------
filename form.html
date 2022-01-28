@@ -12,38 +12,51 @@
 </head>
 
 <body>
-    <form method="post" action="//httpbin.org/post" data-netlify="true">
-        <div class="form-group">
-            <label for="date">Дата</label>
-            <input type="date" class="form-control" id="date" required="">
-        </div>
+    <header class="body_header">
+        <nav>
+            <img src="img/logo.svg" alt="logo">
+            <div class="menu">
+                <ul>
+                    <li>Параваева Дарья Олеговна, 201-323, 28.01.2022</li>
+                    <li><button type="submit"> <img src="img/lines.svg" alt="menu" /> </button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-        <div class="form-group">
-            <label for="departure_city">город отправления</label>
-            <input type="text" class="form-control" id="departure_city" placeholder="Москва" required="">
+    <main>
+        <form method="post" action="//httpbin.org/post" data-netlify="true">
+        <fieldset class="FORM_ALL">
+            <div class="form-group">
+                <label for="date">Дата</label>
+                <input type="date" class="form-control" id="date" required="">
+            </div>
 
-        </div>
+            <div class="form-group">
+                <label for="departure_city">Город отправления</label>
+                <input type="text" class="form-control" id="departure_city" placeholder="Москва" required="">
+            </div>
 
-        <div class="form-group">
-            <label for="arriving_city">Город назначения</label>
-            <input type="text" class="form-control" id="arriving_city" placeholder="Бужумбура" required="">
+            <div class="form-group">
+                <label for="arriving_city">Город назначения</label>
+                <input type="text" class="form-control" id="arriving_city" placeholder="Сочи" required="">
+            </div>
 
-        </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                <label class="form-check-label" for="inlineRadio1">Взрослый</label>
+            </div>
 
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Взрослый</label>
-        </div>
-
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">Детский</label>
-        </div>
-
-        <div class="col-12">
-            <button class="btn btn-primary" type="submit">Submit form</button>
-        </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                <label class="form-check-label" for="inlineRadio2">Детский</label>
+            </div>
+            <button class="btn btn-primary" type="submit">Отправить</button>
+        </fieldset>
     </form>
+</main>
 </body>
 
 </html>
