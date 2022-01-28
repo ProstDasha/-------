@@ -14,7 +14,6 @@ nav
     flex-direction: row;
     align-items: center;   
     justify-content: space-between;
-    margin: none;
     background-color: white;
     margin: 0 auto;
     max-width: 1220px;
