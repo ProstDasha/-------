@@ -37,10 +37,123 @@ nav
     vertical-align: middle;
     margin-left: 16px;
     display: inline;
+
+    font-family: Urbanist;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--font-color);
 }
 
 .menu button
 {
   background-color: transparent;
   border: none;
+  padding-top: 6px;
+}
+
+.menu button:hover {
+    filter: drop-shadow(0 4px 4px rgb(0, 0, 0, 0.25))
+      drop-shadow(0 4px 4px rgb(0, 0, 0, 0.25));
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.body_section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3% 8% 3% 8%;
+}
+.body_section div
+{
+    margin: 0;
+}
+.body_section h1
+{ 
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 74px;
+    color: var(--font-color);
+    text-transform: uppercase;
+
+    width: 630px;
+}
+.body_section p
+{
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--font-color);
+    width: 462px;
+}
+
+.b_orange_border
+{
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    
+    text-align: center;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}  
+
+.b_orange
+{
+    color: white;
+    background: var(--btn-color);
+    text-align: center;
+    width: 255px; 
+    text-decoration: none;
+    padding: 17px 56px 17px 56px;
+    border: 0;
+    margin: auto;
+}  
+
+.b_border
+{
+    color: var(--font-color);
+    background: none;
+    text-align: center;
+    width: 255px; 
+    text-decoration: none;
+    padding: 17px 56px 17px 56px;
+    border: 2px solid var(--font-color);
+    margin: auto;
+}  
+
+.section_img
+{
+    position: relative;
+    left: 53%;
+}
+
+.b_orange:hover {
+    filter: drop-shadow(0 4px 4px rgb(0, 0, 0, 0.25))
+      drop-shadow(0 4px 4px rgb(0, 0, 0, 0.25));
+    transition-property: all;
+    transition-duration: 1s;
+}
+.b_orange:active {
+    color: black;
+}
+
+.b_border:hover {
+    filter: drop-shadow(0 4px 4px rgb(0, 0, 0, 0.25))
+      drop-shadow(0 4px 4px rgb(0, 0, 0, 0.25));
+    transition-property: all;
+    transition-duration: 1s;
+}
+.b_border:active {
+    color:var(--btn-color);
 }
