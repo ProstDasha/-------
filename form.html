@@ -25,31 +25,31 @@
     </header>
 
     <main>
-        <form method="post" action="//httpbin.org/post" data-netlify="true">
+        <form method="post" action="//httpbin.org/post">
         <fieldset class="FORM_ALL">
             <div class="form-group">
                 <label for="date">Дата</label>
-                <input type="date" class="form-control" id="date" required="">
+                <input name = "date" type="date" class="form-control" id="date" required="">
             </div>
 
             <div class="form-group">
                 <label for="departure_city">Город отправления</label>
-                <input type="text" class="form-control" id="departure_city" placeholder="Москва" required="">
+                <input name = "departure" type="text" class="form-control" id="departure_city" placeholder="Москва" required="">
             </div>
 
             <div class="form-group">
                 <label for="arriving_city">Город назначения</label>
-                <input type="text" class="form-control" id="arriving_city" placeholder="Сочи" required="">
+                <input name = "arriving" type="text" class="form-control" id="arriving_city" placeholder="Сочи" required="">
             </div>
 
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                <input class="form-check-input" type="radio" name="Adult" id="inlineRadio1"
                     value="option1">
                 <label class="form-check-label" for="inlineRadio1">Взрослый</label>
             </div>
 
             <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                <input class="form-check-input" type="radio" name="Child" id="inlineRadio2"
                     value="option2">
                 <label class="form-check-label" for="inlineRadio2">Детский</label>
             </div>
